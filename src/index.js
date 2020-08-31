@@ -9,6 +9,7 @@ import './index.css';
  import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Welcome from "./containers/Welcome";
+import Home from "./containers/Home";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,9 @@ ReactDOM.render(
       <Switch>
           <Route path="/welcome">
               <Welcome />
+          </Route>
+          <Route path="/home">
+              <Home />
           </Route>
 
           <Route path="/">
